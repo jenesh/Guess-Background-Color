@@ -15,8 +15,8 @@ let currScore = 0;
 let currLives = 3;
 let star = ['⭐️', '⭐️', '⭐️'];
 
-console.log(highScore)
-console.log(JSON.parse(localStorage.getItem('storeObj')))
+// console.log(highScore)
+// console.log(JSON.parse(localStorage.getItem('storeObj')))
 
 let answer;
 randomColor();
@@ -29,7 +29,7 @@ function randomColor() {
 
     let rgb = `rgb(${red}, ${green}, ${blue})`;
 
-    console.log('RGB: ', red, green, blue)
+    // console.log('RGB: ', red, green, blue);
     background.style.backgroundColor = rgb;
 
     if (red > green && red > blue) {
@@ -63,10 +63,10 @@ function checkGuess() {
     gameCheck();
     randomColor();
     
-    console.log(star)
-    console.log("lives: ", currLives)
-    console.log('Answer: ', answer);
-    console.log('Button Clicked: ', this);
+    // console.log(star)
+    // console.log("lives: ", currLives)
+    // console.log('Answer: ', answer);
+    // console.log('Button Clicked: ', this);
 }
 
 function gameCheck() {
